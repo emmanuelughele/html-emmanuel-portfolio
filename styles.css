@@ -113,26 +113,3 @@ footer {
         grid-template-columns: 1fr;
     }
 }
-/* Fade-in effect */
-.project {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.project.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Shake effect on hover */
-@keyframes shake {
-    0%, 100% { transform: translateX(0); }
-    25% { transform: translateX(-3px); }
-    50% { transform: translateX(3px); }
-    75% { transform: translateX(-3px); }
-}
-
-.project.shake {
-    animation: shake 0.3s ease-in-out;
-}
